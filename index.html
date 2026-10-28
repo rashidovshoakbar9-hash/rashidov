@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKUTER.UZ | Skuterlar do‘koni</title>
+    <link rel="stylesheet" href="./mars.css">
+</head>
+<body>
+
+<header>
+    <a href="#" class="logo">🛵 SKUTER<span>.UZ</span></a>
+
+    <nav id="navbar">
+        <a href="#home">Bosh sahifa</a>
+        <a href="#models">Modellar</a>
+        <a href="#about">Biz haqimizda</a>
+        <a href="#contact">Aloqa</a>
+    </nav>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="subtitle">YANGI AVLOD SKUTERLARI</p>
+        <h1>Shahar bo‘ylab<br><span>erkin harakatlan!</span></h1>
+
+        <p class="description">
+            Zamonaviy dizayn, qulay narx va sifatli skuterlar.
+            O‘zingizga mos modelni biz bilan tanlang!
+        </p>
+
+        <a href="#models" class="btn">Modellarni ko‘r →</a>
+    </div>
+
+    <div class="hero-image">
+        <img
+            src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1000&q=85"
+            alt="Zamonaviy mototransport"
+        >
+        <div class="image-label">YANGI MODELLAR 2026</div>
+    </div>
+</section>
+
+<section class="models" id="models">
+    <p class="subtitle">BIZNING KOLLEKSIYA</p>
+    <h2>Skuter <span>modellari</span></h2>
+    <p class="section-description">
+        O‘zingizga yoqqan skuter modelini tanlang.
+    </p>
+
+    <div class="filters">
+        <button class="filter active" data-type="all">Barchasi</button>
+        <button class="filter" data-type="city">Shahar uchun</button>
+        <button class="filter" data-type="electric">Elektr</button>
+        <button class="filter" data-type="sport">Sport</button>
+    </div>
+
+    <input
+        type="search"
+        id="search"
+        placeholder="🔎 Skuter modelini qidirish..."
+    >
+
+    <div class="product-grid" id="productGrid"></div>
+
+    <p class="note">
+        * Ko‘rsatilgan narxlar namuna uchun. Haqiqiy narxni sotuvchi bilan aniqlashtiring.
+    </p>
+</section>
+
+<section class="about" id="about">
+    <p class="subtitle">NIMA UCHUN BIZ?</p>
+    <h2>Biz bilan harakat <span>oson!</span></h2>
+
+    <div class="advantages">
+        <div class="advantage">
+            <div class="icon">✦</div>
+            <h3>Zamonaviy dizayn</h3>
+            <p>Chiroyli va zamonaviy modellar.</p>
+        </div>
+
+        <div class="advantage">
+            <div class="icon">✓</div>
+            <h3>Keng tanlov</h3>
+            <p>Turli narx va modellardagi skuterlar.</p>
+        </div>
+
+        <div class="advantage">
+            <div class="icon">↗</div>
+            <h3>Qulay foydalanish</h3>
+            <p>O‘zingizga mos modelni tez toping.</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <p class="subtitle">BIZ BILAN BOG‘LANING</p>
+    <h2>Skuter tanlang va <span>so‘rov qoldiring!</span></h2>
+
+    <form id="contactForm">
+        <input type="text" id="customerName"
+               placeholder="Ismingiz" required>
+
+        <input type="tel" id="customerPhone"
+               placeholder="Telefon raqamingiz" required>
+
+        <select id="modelSelect" required>
+            <option value="">Skuter modelini tanlang</option>
+        </select>
+
+        <button class="btn" type="submit">So‘rov yuborish →</button>
+
+        <p id="message"></p>
+    </form>
+</section>
+
+<footer>
+    <a href="#" class="logo">🛵 SKUTER<span>.UZ</span></a>
+    <p>© 2026 SKUTER.UZ — Barcha huquqlar himoyalangan.</p>
+</footer>
+
+<script src="./script.js"></script>
+</body>
+</html>
